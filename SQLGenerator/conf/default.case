@@ -1,0 +1,5 @@
+// 题目中的query
+query: "select " col op lit " from t;"
+col: "c1" | "c2" | "c3"
+op: "+" | "-"
+lit: "65536" | "'2019'" | "'x'"

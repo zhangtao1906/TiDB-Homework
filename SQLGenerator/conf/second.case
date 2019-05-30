@@ -1,0 +1,7 @@
+// 自定义update的query
+query: " update " tbl " set " col "=" col op col " where " col relation lit ";"
+col: "c1" | "c2" | "c3" | lit
+tbl: "t1" | "t2" | "t3"
+op: "+" | "-" | "*" | "/" | "%"
+relation: ">" | "<" | ">=" | "<=" | "!="
+lit: "65536" | "'2019'" | "'x'" | "foo=\"bar\"" | col
