@@ -1,0 +1,10 @@
+// 自定义复杂的query
+query: " select " cols op cols " from " tbl  " where " col2 relation lit " " logic " " col1 relation lit ";"
+col1: "c1" | "c2" | "c3"
+col2: "c4" | "c5"
+cols: col1 | col2 | col1 ", " col2 ", " cols
+tbl: "t1" | "t2" | "t3"
+op: "+" | "-" | "*" | "/" | "%"
+relation: ">" | "<" | ">=" | "<=" | "!="
+logic: "and" | "or"
+lit: "65536" | "'2019'" | "'x'" | "foo=\"bar\""

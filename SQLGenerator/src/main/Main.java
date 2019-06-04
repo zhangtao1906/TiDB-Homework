@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         SQLGen sg = new SQLGen();
         long startTime=System.currentTimeMillis();
-        sg.generateSQL("conf\\second.case", 20000);
+        sg.generateSQL("conf\\complexRule.case", 20000000);
         long endTime=System.currentTimeMillis();
         logger.info(String.format("程序运行时间：%d ms",(endTime - startTime)));
     }

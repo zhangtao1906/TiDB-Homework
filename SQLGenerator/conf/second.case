@@ -1,6 +1,6 @@
-// 自定义update的query
+// 自定义update的SQL
 query: " update " tbl " set " col "=" col op col " where " col relation lit ";"
-col: "c1" | "c2" | "c3" | lit
+col: "c1" | "c2" | "c3"
 tbl: "t1" | "t2" | "t3"
 op: "+" | "-" | "*" | "/" | "%"
 relation: ">" | "<" | ">=" | "<=" | "!="
